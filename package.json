@@ -27,7 +27,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "deploy": "gh-pages -d build",
+    "deploy": "gulp build && gh-pages -d build",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
